@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animoe - 找到屬於你的命定動畫！</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-cat logo-icon"></i>
+                <div class="logo-text">
+                    <h1>Animoe!</h1>
+                    <span>アニメ大好き！</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fa-solid fa-house"></i> 首頁 <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/star_cat_1776913219666.png" class="nav-cat" alt="cat"></a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i> 推薦</a></li>
+                    <li><a href="#"><i class="fa-regular fa-calendar"></i> 新番時間表</a></li>
+                    <li><a href="#"><i class="fa-solid fa-border-all"></i> 分類瀏覽</a></li>
+                    <li><a href="#"><i class="fa-solid fa-trophy"></i> 排行榜</a></li>
+                    <li><a href="#"><i class="fa-regular fa-bookmark"></i> 我的追番</a></li>
+                    <li><a href="#"><i class="fa-regular fa-star"></i> 收藏清單 <i class="fa-solid fa-paw paw-icon"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-comments"></i> 社群交流 <span class="badge">NEW</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="quick-categories">
+                <h3>快速分類</h3>
+                <div class="tags">
+                    <span class="tag">奇幻</span>
+                    <span class="tag">戀愛</span>
+                    <span class="tag">校園</span>
+                    <span class="tag">戰鬥</span>
+                    <span class="tag">日常</span>
+                    <span class="tag">科幻</span>
+                    <span class="tag">懸疑</span>
+                    <span class="tag">治癒</span>
+                </div>
+            </div>
+
+            <div class="random-recommend">
+                <div class="card-content">
+                    <p>今天也要<br>開心追番喵~</p>
+                    <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/star_cat_1776913219666.png" alt="Happy Cat">
+                </div>
+                <button class="btn-random"><i class="fa-solid fa-shuffle"></i> 隨機推薦</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="搜尋動漫名稱、角色、製作公司...">
+                    <div class="shortcut">Ctrl K</div>
+                    <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="user-actions">
+                    <button class="btn-icon"><i class="fa-regular fa-bell"></i></button>
+                    <button class="btn-icon"><i class="fa-regular fa-comment"></i></button>
+                    <div class="user-profile">
+                        <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/user_avatar_1776913361171.png" alt="User Avatar">
+                        <span>小櫻喵 <i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="scroll-area">
+                <!-- Hero Section -->
+                <div class="hero-section">
+                    <div class="hero-banner">
+                        <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/hero_banner_1776913072232.png" alt="Hero Banner" class="hero-bg">
+                        <div class="hero-content">
+                            <h2>找到屬於你的<br><span>命定動畫！</span></h2>
+                            <p>根據你的喜好，探索無數精彩的動畫世界 <i class="fa-solid fa-wand-magic-sparkles"></i></p>
+                            <button class="btn-primary">開始探索 <i class="fa-solid fa-paw"></i></button>
+                        </div>
+                        <button class="slider-btn left"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="slider-btn right"><i class="fa-solid fa-chevron-right"></i></button>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="hero-side">
+                        <!-- Lucky Cat Card -->
+                        <div class="lucky-card">
+                            <div class="card-header">
+                                <h3><i class="fa-solid fa-star"></i> 今日幸運喵</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="text">
+                                    <p>今天的運勢超棒！<br>很適合發掘新番喔～</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/star_cat_1776913219666.png" alt="Lucky Cat">
+                                    <span class="score">4.0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Today's Pick -->
+                        <div class="pick-card">
+                            <div class="card-header">
+                                <h3><i class="fa-solid fa-clover"></i> 今日精選</h3>
+                            </div>
+                            <div class="card-body">
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_fantasy_1776913489657.png" alt="Frieren" class="poster">
+                                <div class="info">
+                                    <h4>葬送的芙莉蓮</h4>
+                                    <div class="tags">
+                                        <span class="score-tag"><i class="fa-solid fa-star"></i> 9.6</span>
+                                        <span>奇幻 · 冒險 · 治癒</span>
+                                    </div>
+                                    <p>一段關於魔法、時間與羈絆的溫柔旅程。</p>
+                                    <div class="actions">
+                                        <button class="btn-outline">查看詳情</button>
+                                        <button class="btn-icon-outline"><i class="fa-regular fa-bookmark"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended Section -->
+                <section class="anime-row">
+                    <div class="section-header">
+                        <h3><i class="fa-solid fa-heart"></i> 為你推薦 <span>根據你的觀看歷史和喜好</span></h3>
+                        <a href="#" class="view-all">查看全部 <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <div class="anime-grid">
+                        <!-- Item 1 -->
+                        <div class="anime-card">
+                            <div class="thumbnail">
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_fantasy_1776913489657.png" alt="AOT">
+                                <span class="score-badge"><i class="fa-solid fa-star"></i> 9.4</span>
+                            </div>
+                            <div class="info">
+                                <h4>進擊的巨人 The Final Season</h4>
+                                <p>動作 · 劇情 · 奇幻</p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="anime-card">
+                            <div class="thumbnail">
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_romance_1776913510884.png" alt="5cm">
+                                <span class="score-badge"><i class="fa-solid fa-star"></i> 9.2</span>
+                            </div>
+                            <div class="info">
+                                <h4>秒速5公分</h4>
+                                <p>愛情 · 劇情 · 日常</p>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="anime-card">
+                            <div class="thumbnail">
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_fantasy_1776913489657.png" alt="JJK">
+                                <span class="score-badge"><i class="fa-solid fa-star"></i> 9.5</span>
+                            </div>
+                            <div class="info">
+                                <h4>咒術迴戰 第二季</h4>
+                                <p>動作 · 奇幻 · 校園</p>
+                            </div>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="anime-card">
+                            <div class="thumbnail">
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_romance_1776913510884.png" alt="Weathering">
+                                <span class="score-badge"><i class="fa-solid fa-star"></i> 9.1</span>
+                            </div>
+                            <div class="info">
+                                <h4>天氣之子</h4>
+                                <p>愛情 · 奇幻 · 日常</p>
+                            </div>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="anime-card">
+                            <div class="thumbnail">
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_fantasy_1776913489657.png" alt="ReZero">
+                                <span class="score-badge"><i class="fa-solid fa-star"></i> 9.3</span>
+                            </div>
+                            <div class="info">
+                                <h4>Re:從零開始的異世界生活</h4>
+                                <p>奇幻 · 冒險 · 劇情</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- New Season Section -->
+                <section class="anime-row">
+                    <div class="section-header">
+                        <h3><i class="fa-solid fa-tv"></i> 本季新番 <span class="badge">NEW</span> <span>最新更新的動畫作品</span></h3>
+                        <a href="#" class="view-all">查看全部 <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <div class="anime-grid">
+                        <!-- Item 1 -->
+                        <div class="anime-card">
+                            <div class="thumbnail">
+                                <span class="new-tag">NEW</span>
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_romance_1776913510884.png" alt="Oshi no ko">
+                                <span class="episode-tag">第6話</span>
+                                <button class="btn-like"><i class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <div class="info">
+                                <h4>我推的孩子 第三季</h4>
+                                <p>每週三 23:00 更新</p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="anime-card">
+                            <div class="thumbnail">
+                                <span class="new-tag">NEW</span>
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_fantasy_1776913489657.png" alt="Kaiju 8">
+                                <span class="episode-tag">第5話</span>
+                                <button class="btn-like"><i class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <div class="info">
+                                <h4>怪獸8號</h4>
+                                <p>每週六 22:00 更新</p>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="anime-card">
+                            <div class="thumbnail">
+                                <span class="new-tag">NEW</span>
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_romance_1776913510884.png" alt="Wind Breaker">
+                                <span class="episode-tag">第6話</span>
+                                <button class="btn-like"><i class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <div class="info">
+                                <h4>WIND BREAKER 防風少年</h4>
+                                <p>每週四 24:30 更新</p>
+                            </div>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="anime-card">
+                            <div class="thumbnail">
+                                <span class="new-tag">NEW</span>
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_fantasy_1776913489657.png" alt="Konosuba">
+                                <span class="episode-tag">第5話</span>
+                                <button class="btn-like"><i class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <div class="info">
+                                <h4>為美好的世界獻上祝福！3</h4>
+                                <p>每週五 21:30 更新</p>
+                            </div>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="anime-card">
+                            <div class="thumbnail">
+                                <span class="new-tag">NEW</span>
+                                <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/poster_romance_1776913510884.png" alt="Mushoku">
+                                <span class="episode-tag">第6話</span>
+                                <button class="btn-like"><i class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <div class="info">
+                                <h4>無職轉生 II ~到了異世界就拿出真本事~</h4>
+                                <p>每週日 24:00 更新</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Floating Chat Button -->
+        <button class="floating-chat">
+            <img src="C:/Users/bigmoumou/.gemini/antigravity/brain/01b38e0b-b897-4b9e-8c95-cc6c1c9a8ff3/star_cat_1776913219666.png" alt="Chat">
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
