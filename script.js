@@ -21,18 +21,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Hero Slider (Visual only for now, can be extended)
+    // Hero Slider (Auto rotation & Visual update)
     const dots = document.querySelectorAll('.dot');
+    const slides = document.querySelectorAll('.carousel-slide');
     let currentSlide = 0;
+    let slideInterval;
 
     const updateSlider = (index) => {
         dots.forEach(dot => dot.classList.remove('active'));
+        slides.forEach(slide => slide.classList.remove('active'));
         dots[index].classList.add('active');
+        slides[index].classList.add('active');
         currentSlide = index;
     };
 
+    const nextSlide = () => {
+        let next = currentSlide + 1;
+        if (next >= dots.length) next = 0;
+        updateSlider(next);
+    };
+
+    const startAutoSlide = () => {
+        slideInterval = setInterval(nextSlide, 5000); // 5 seconds per slide
+    };
+
+    const resetAutoSlide = () => {
+        clearInterval(slideInterval);
+        startAutoSlide();
+    };
+
     dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => updateSlider(index));
+        dot.addEventListener('click', () => {
+            updateSlider(index);
+            resetAutoSlide();
+        });
     });
 
     const leftBtn = document.querySelector('.slider-btn.left');
@@ -42,13 +64,16 @@ document.addEventListener('DOMContentLoaded', () => {
         let prev = currentSlide - 1;
         if (prev < 0) prev = dots.length - 1;
         updateSlider(prev);
+        resetAutoSlide();
     });
 
     rightBtn.addEventListener('click', () => {
-        let next = currentSlide + 1;
-        if (next >= dots.length) next = 0;
-        updateSlider(next);
+        nextSlide();
+        resetAutoSlide();
     });
+
+    // Start auto sliding
+    startAutoSlide();
 
     // Like buttons interaction
     const likeBtns = document.querySelectorAll('.btn-like');
