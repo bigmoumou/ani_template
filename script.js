@@ -76,4 +76,40 @@ document.addEventListener('DOMContentLoaded', () => {
             randomCat.style.transform = 'scale(1) rotate(0deg)';
         }, 300);
     });
+
+    // ===== Sakura Falling Effect =====
+    function createSakura() {
+        const petal = document.createElement('div');
+        petal.classList.add('sakura-petal');
+        
+        // 隨機大小
+        const size = Math.random() * 12 + 8; // 8px ~ 20px
+        petal.style.width = `${size}px`;
+        petal.style.height = `${size}px`;
+        
+        // 隨機起始水平位置
+        petal.style.left = `${Math.random() * 100}vw`;
+        
+        // 隨機動畫時間
+        const fallDuration = Math.random() * 5 + 7; // 7s ~ 12s
+        const swayDuration = Math.random() * 2 + 2; // 2s ~ 4s
+        
+        // 加入動畫
+        petal.style.animation = `fall ${fallDuration}s linear forwards, sway ${swayDuration}s ease-in-out infinite alternate`;
+        
+        document.body.appendChild(petal);
+        
+        // 動畫結束後移除 DOM
+        setTimeout(() => {
+            petal.remove();
+        }, fallDuration * 1000);
+    }
+
+    // 初始先產生幾片櫻花
+    for(let i = 0; i < 15; i++) {
+        setTimeout(createSakura, Math.random() * 4000);
+    }
+
+    // 持續產生櫻花
+    setInterval(createSakura, 400);
 });

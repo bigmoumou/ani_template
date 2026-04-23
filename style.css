@@ -883,3 +883,41 @@ body {
         display: none;
     }
 }
+
+/* ===== Sakura Falling Animation ===== */
+.sakura-petal {
+    position: fixed;
+    top: -50px;
+    z-index: 9999;
+    pointer-events: none;
+    background: linear-gradient(135deg, #ffb7c5, #ff8da1);
+    border-radius: 15px 2px 15px 2px;
+    opacity: 0.8;
+    box-shadow: 0 0 6px rgba(255, 183, 197, 0.5);
+}
+
+@keyframes fall {
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        top: 105vh;
+        opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0% {
+        transform: translateX(-50px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(50px) rotate(90deg);
+    }
+}
